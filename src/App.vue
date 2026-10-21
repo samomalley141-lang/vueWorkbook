@@ -1,12 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-
-const name = ref('Alex Morgan')
-const bio = ref('I am learning to build interactive web pages.')
+const name = ref('Sam')
+const bio = ref('I am an IDM 2 student in TUS Moylish')
 // TASK 4: Create a reactive likes counter.
 // TASK 5: Create reactive showFact and fact values.
 </script>
-
 <template>
   <main>
     <article class="card">
@@ -19,7 +17,6 @@ const bio = ref('I am learning to build interactive web pages.')
     </article>
   </main>
 </template>
-
 <style>
 * { box-sizing: border-box; }
 body {

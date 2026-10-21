@@ -24,16 +24,16 @@ const bio = ref('I am an IDM 2 student in TUS Moylish')
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #eef2f6;
-  color: #192d3a;
+  background: #101017;
+  color: #b5e1ff;
 }
 main { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
-.card { width: 100%; max-width: 520px; padding: 32px; background: white; border-radius: 18px; }
-.eyebrow { color: #24634a; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
-h1 { overflow-wrap: anywhere; }
+.card { width: 100%; max-width: 520px; padding: 28px; background: #181818; border-radius: 23px; }
+.eyebrow { color: #B5FFC0; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { overflow-wrap: anywhere; color:#f2f2f2 }
 label { display: block; margin-top: 24px; font-weight: bold; }
 input { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #637580; border-radius: 8px; font: inherit; }
-button { padding: 12px 16px; margin: 16px 8px 0 0; border: 0; border-radius: 8px; background: #24634a; color: white; font: inherit; cursor: pointer; }
+button { padding: 12px 16px; margin: 16px 8px 0 0; border: 0; border-radius: 8px; background: #ff0000; color: #f2f2f2; font: inherit; cursor: pointer; }
 button:hover { background: #174630; }
 :focus-visible { outline: 3px solid #b55000; outline-offset: 3px; }
 /* TASK 3: Personalise the background, card, heading and buttons. */

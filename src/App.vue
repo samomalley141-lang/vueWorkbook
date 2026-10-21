@@ -11,10 +11,13 @@ const bio = ref('I am an IDM 2 student in TUS Moylish')
       <p class="eyebrow">MY FIRST VUE PAGE</p>
       <h1>{{ name }}</h1>
       <p>{{ bio }}</p>
+      it
       <label for="name">Your name</label>
       <input id="name" v-model="name" maxlength="60">
 
-      <!-- TASK 4: Add a button, click counter and @click here. -->
+      <button type="button" @click="likes++">Like this page</button>
+      <p aria-live="polite">Likes: {{ likes }}</p>
+
       <!-- TASK 5: Add a toggle button and v-if paragraph here. -->
     </article>
   </main>
@@ -33,7 +36,7 @@ main { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
 h1 { overflow-wrap: anywhere; color:#f2f2f2 }
 label { display: block; margin-top: 24px; font-weight: bold; }
 input { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #637580; border-radius: 8px; font: inherit; }
-button { padding: 12px 16px; margin: 16px 8px 0 0; border: 0; border-radius: 8px; background: #ff0000; color: #f2f2f2; font: inherit; cursor: pointer; }
+button { padding: 12px 16px; margin: 16px 8px 0 0; border: 0; border-radius: 8px; background: #0e2c1e; color: #f2f2f2; font: inherit; cursor: pointer; }
 button:hover { background: #174630; }
 :focus-visible { outline: 3px solid #b55000; outline-offset: 3px; }
 /* TASK 3: Personalise the background, card, heading and buttons. */

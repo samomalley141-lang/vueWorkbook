@@ -17,6 +17,8 @@ const fact = ref('I can name five constellations.')
       <input id="name" v-model="name" maxlength="60">
 
       <button type="button" @click="likes++">Like this page</button>
+      <button type="button" @click="likes=0">reset</button>
+
       <p aria-live="polite">Likes: {{ likes }}</p>
 
       <button type="button" @click="showFact = !showFact"
@@ -45,5 +47,4 @@ input { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #637580; 
 button { padding: 12px 16px; margin: 16px 8px 0 0; border: 0; border-radius: 8px; background: #0e2c1e; color: #f2f2f2; font: inherit; cursor: pointer; }
 button:hover { background: #174630; }
 :focus-visible { outline: 3px solid #b55000; outline-offset: 3px; }
-/* TASK 3: Personalise the background, card, heading and buttons. */
 </style>

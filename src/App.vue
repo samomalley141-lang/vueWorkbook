@@ -2,8 +2,9 @@
 import { ref } from 'vue'
 const name = ref('Sam')
 const bio = ref('I am an IDM 2 student in TUS Moylish')
-// TASK 4: Create a reactive likes counter.
-// TASK 5: Create reactive showFact and fact values.
+const likes = ref(0)
+const showFact = ref(false)
+const fact = ref('I can name five constellations.')
 </script>
 <template>
   <main>
@@ -18,7 +19,12 @@ const bio = ref('I am an IDM 2 student in TUS Moylish')
       <button type="button" @click="likes++">Like this page</button>
       <p aria-live="polite">Likes: {{ likes }}</p>
 
-      <!-- TASK 5: Add a toggle button and v-if paragraph here. -->
+      <button type="button" @click="showFact = !showFact"
+      :aria-expanded="showFact" aria-controls="fact">
+           {{  showFact ? 'hide fun fact' : 'Show fun fact' }}
+      </button>
+      <p id="fact" v-if="showFact">{{ fact }}</p>
+
     </article>
   </main>
 </template>
